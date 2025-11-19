@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # READ DATA
-df = pd.read_csv(r"C:\New folder\archive (1).zip", compression="zip", encoding="latin1")
+df = pd.read_csv(r"/workspaces/Netflix-Content-Analysis/netflix_titles.zip", compression="zip", encoding="latin1")
 print("\n FULL DATAFRAME\n",df)
 
 print("\n1. 5 MOVIES FROM STARTING\n")
@@ -67,6 +67,7 @@ print("\nB.        TV SHOWS \n")
 
 Duration_shows= df[df["type"]=="TV Show"]
 print(Duration_shows["duration"].value_counts().head(10))
+
 
 
 
